@@ -15,6 +15,12 @@
             window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
         );
     </script>
+    <style>
+        img {
+            max-width: 100%;
+            max-height: 15rem;
+        }
+    </style>
 </head>
 <body class="vh-100 d-flex flex-column">
 
@@ -50,14 +56,15 @@
 
         <div class="col-lg-3 mb-4 mb-lg-0">
             <div class="list-group">
-                <div class="list-group-item list-group-item-action active">
+                <a class="list-group-item list-group-item-action"
+                   href="./index.html">
                     <span>Опис</span>
-                </div>
+                </a>
                 <a class="list-group-item list-group-item-action"
                    href="./launcher.html">
                     <span>Лаунчер</span>
                 </a>
-                <a class="list-group-item list-group-item-action"
+                <a class="list-group-item list-group-item-action active"
                    href="./client.html">
                     <span>Клієнт</span>
                 </a>
@@ -66,46 +73,48 @@
 
         <div class="col col-lg-9">
 
-            <h2>Інформація</h2>
+            <h2>Клієнт</h2>
+            <p>Як скачати та запустити клієнт можна подивитись на сторінці <a href="./launcher.html">Лаунчер</a>.</p>
+            <p class="alert alert-info d-flex align-items-start" role="alert">
+                <i class="bi bi-info-circle me-2"></i>
+                <span>Можна змінити мову клієнта в головному меню.</span>
+            </p>
 
             <hr>
 
-            <p>
-                <img src="../image/minecraft/logo-minecraft.png"
-                     alt="logo-minecraft"
-                style="max-height: 2rem;">
-            </p>
+            <div class="mb-4">
+                <h5>1. Мультиплеер</h5>
+                <p>Натиснути <mark>Multiplayer</mark>.</p>
+                <hr>
+                <img src="../image/minecraft/client/1.jpg" alt="screenshot">
+            </div>
 
-            <table class="table">
-                <tr>
-                    <td><span>Версія</span></td>
-                    <td><span>1.20.1 (Java)</span></td>
-                </tr>
-                <tr>
-                    <td><span>Ключ</span></td>
-                    <td><a href="https://mcseedmap.net/1.20.1-Java/4684542949264255144/" target="_blank">4684542949264255144</a></td>
-                </tr>
-                <tr>
-                    <td><span>Адреса</span></td>
-                    <td><code>134.249.100.219</code></td>
-                </tr>
-                <tr>
-                    <td><span>Назва</span></td>
-                    <td><span>Western</span></td>
-                </tr>
-                <tr>
-                    <td><span>Тип</span></td>
-                    <td><span>Ваніла</span></td>
-                </tr>
-                <tr>
-                    <td><span>Складність</span></td>
-                    <td><span>Норма</span></td>
-                </tr>
-                <tr>
-                    <td><span>Максимальна кількість</span></td>
-                    <td><span>20</span></td>
-                </tr>
-            </table>
+            <div class="mb-4">
+                <h5>2. Додати сервер</h5>
+                <p>Натиснути <mark>Add Server</mark>.</p>
+                <hr>
+                <img src="../image/minecraft/client/2.jpg" alt="screenshot">
+            </div>
+
+            <div class="mb-4">
+                <h5>3. Налаштувати сервер</h5>
+                <ul>
+                    <li>Server Name: Western (будь яке, на справді)</li>
+                    <li>Server Address: <code>134.249.100.219</code></li>
+                </ul>
+                <p>Натиснути <mark>Done</mark>.</p>
+                <hr>
+                <img src="../image/minecraft/client/3.jpg" alt="screenshot">
+            </div>
+
+            <div>
+                <h5>4. Приєднатись</h5>
+                <p>Обрати доданий сервер. Натиснути <mark>Join Server</mark>.</p>
+                <hr>
+                <img class="mb-2" src="../image/minecraft/client/4.jpg" alt="screenshot">
+                <br>
+                <img src="../image/minecraft/client/5.jpg" alt="screenshot">
+            </div>
 
         </div>
 
